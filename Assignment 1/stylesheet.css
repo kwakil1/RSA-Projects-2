@@ -1,0 +1,175 @@
+:root {
+  --ff-primary: Heebo, sans-serif;
+  --ff-secondary: Bungee, cursive;
+  --ff-accent: Bungee Shade, cursive;
+  --spacer: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: green;
+  text-align: center;
+}
+
+.topnav a {
+  background-color: green;
+  display: inline-block;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px;
+}
+
+li,
+ul,
+button {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s:all
+}
+
+.nav__links li a:hover {
+    color: #fff;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba (0, 136, 169, 1);
+    border: none;
+    border-radius: 50 px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgba (0, 136, 169, 1);
+}
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  aspect-ratio: 1/1.5;
+  border: 3px solid green;
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card__content {
+  background: white;
+  align-self: end;
+  margin: 0.4rem 0.4rem 1.5rem;
+  padding: 0.4rem;
+  box-shadow: 0 0.25rem 1rem rgb(0 0 0 /0.1);
+}
+
+.card__title {
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+button,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+button,
+h4 {
+  font-family: var(--ff-secondary);
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
